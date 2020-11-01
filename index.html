@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Over</title>
+
+    <!-- Css is used for styling -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="profile-icon" src="./assets/m (1).png" alt="CSK Logo">
+                <span class="profile-name" id="team-1-name"></span>
+                <div class="row round-runs" id="team-1-round-runs">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row score">
+                    <span id="team-1-score"></span>
+                    <span>-</span>
+                    <span id="team-2-score"></span>
+                </div>
+            </div>
+            <div class="col">
+                <img class="profile-icon" src="./assets/m (2).png" alt="MI Logo" width="150px" height="150px">
+                <span class="profile-name" id="team-2-name"></span>
+                <div class="row round-runs" id="team-2-round-runs">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button id="bat-button" onclick="handleStrikeButton()"></button>
+            <a href="javascript:location.reload(true)"><button id="try-again-button">Try Again</button></a>
+
+        </div>
+        <div class="row" id="result" hidden></div>
+    </div>
+
+
+    <!-- Including JS File -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
